@@ -3,7 +3,7 @@
     --negro-suave: #1e1e1e;
     --blanco: #ffffff;
     --rosa: #f7cfe1;
-    --rosa-oscuro: #e8a6c4;
+    --rosa-oscuro: #e0a9c277;
     --gris-texto: #6b6b6b;
 }
 
@@ -13,170 +13,213 @@
 
 body {
     font-family: "Work Sans", sans-serif;
-    color: var(--negro);
-    background-color: var(--blanco);
+    color: #ffffff;
+    background: linear-gradient(135deg, #1a1a1a, #2c2c2c);
     margin: 0;
+    min-height: 100vh;
+}
 
-    .hero-photo-frame {
-        width: 280px;
-        /* Tamaño del contenedor */
-        height: 280px;
-        overflow: hidden;
-        border-radius: 50%;
-        /* Si la quieres circular */
-    }
+.hero-photo-frame {
+    width: 280px;
+    height: 280px;
+    overflow: hidden;
+    border-radius: 50%;
+}
 
-    .hero-photo {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-
-    .img-construccion {
-        width: 20px;
-    }
+.hero-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 
-
-    /******===================== Navbar =================*/
-
-
-    #mainNav {
-        background-color: rgba(20, 20, 20, 0.92);
-        backdrop-filter: blur(6px);
-        padding: 16px 0;
-        transition: padding .3s ease;
-    }
-
-    .navbar-brand {
-        font-family: "Poppins", sans-serif;
-        font-weight: 800;
-        font-size: 1.4rem;
-        color: var(--blanco) !important;
-    }
-
-    .nav-link {
-        color: #ddd !important;
-        font-weight: 500;
-        margin: 0 6px;
-        transition: color .2s ease;
-    }
-
-    .nav-link:hover {
-        color: var(--rosa) !important;
-    }
-
-    .btn-pink {
-        background-color: var(--rosa);
-        color: var(--negro) !important;
-        border: none;
-        border-radius: 30px;
-        font-weight: 600;
-        transition: transform .2s ease, background-color .2s ease;
-    }
-
-    .btn-pink:hover {
-        background-color: var(--rosa-oscuro);
-        transform: translateY(-2px);
-        color: var(--negro);
-    }
-
-    .btn-outline-light {
-        border-radius: 30px;
-        font-weight: 500;
-    }
+.img-construccion {
+    width: 20px;
+}
 
 
 
-
-    /******===================== sobre mi =================*/
-    #sobre-mi {
-        background-color: #2c6c70;
-    }
-
-    section {
-        padding: 10px 0;
-    }
-
-    .section-light {
-        background-color: var(--blanco);
-        color: var(--negro);
-    }
+/******===================== Navbar =================*/
 
 
-    .project-card {
-        background-color: var(--negro-suave);
-        border-radius: 6px;
-        overflow: hidden;
-        border: 1px solid #2c2c2c;
-        transition: transform .25s ease, border-color .25s ease;
-        height: 100%;
-    }
+#mainNav {
+    background-color: rgba(20, 20, 20, 0.92);
+    backdrop-filter: blur(6px);
+    padding: 16px 0;
+    transition: padding .3s ease;
+}
 
-    /*******======= proyectos ==============*/
-    .project-card:hover {
-        transform: translateY(-8px);
-        border-color: var(--rosa);
-    }
+.navbar-brand {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-size: 1.4rem;
+    color: var(--blanco) !important;
+}
 
-    .project-card img {
-        width: 40%;
-        display: block;
-    }
+.nav-link {
+    color: #ddd !important;
+    font-weight: 500;
+    margin: 0 6px;
+    transition: color .2s ease;
+}
 
-    .project-body {
-        padding:
-            0px;
-    }
+.nav-link:hover {
+    color: var(--rosa) !important;
+}
 
-    .project-body h5 {
-        color: var(--rosa);
-        margin-bottom: 8px;
-    }
+.btn-pink {
+    background-color: var(--rosa);
+    color: var(--negro) !important;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: transform .2s ease, background-color .2s ease;
+}
 
-    .project-body p {
-        color: #bdbdbd;
-        font-size: .9rem;
-        margin: 0;
-    }
+.btn-pink:hover {
+    background-color: var(--rosa-oscuro);
+    transform: translateY(-2px);
+    color: var(--negro);
+}
 
-    /* =========================================
-   FOOTER
-========================================= */
-    .footer {
-        background-color: var(--negro);
-        color: #aaa;
-        padding: 24px 0;
-        font-size: .9rem;
-    }
+.btn-outline-light {
+    border-radius: 30px;
+    font-weight: 500;
+}
 
-    .back-top {
-        color: var(--rosa);
-        text-decoration: none;
-        font-weight: 600;
-    }
 
-    .back-top:hover {
-        color: var(--blanco);
-    }
 
-    /* ========================================= FOOTER========================================= */
-    .footer {
-        background-color: var(--negro);
-        color: #aaa;
-        padding: 24px 0;
-        font-size: .9rem;
-    }
 
-    .back-top {
-        color: var(--rosa);
-        text-decoration: none;
-        font-weight: 600;
-    }
+/******===================== sobre mi =================*/
+#sobre-mi {
+    background-color: #f8def6d2;
+}
 
-    .back-top:hover {
-        color: var(--blanco);
-    }
+section {
+    padding: 10px 0;
+}
+
+.section-light {
+    background-color: var(--blanco);
+    color: var(--negro);
+}
+
+
+.project-card {
+    background-color: var(--negro-suave);
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid #2c2c2c;
+    transition: transform .25s ease, border-color .25s ease;
+    height: 100%;
+}
+
+/*******======= proyectos ==============*/
+.project-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--rosa);
+}
+
+.project-card img {
+    width: 40%;
+    display: block;
+}
+
+.project-body {
+    padding:
+        0px;
+}
+
+.project-body h5 {
+    color: var(--rosa);
+    margin-bottom: 8px;
+}
+
+.project-body p {
+    color: #bdbdbd;
+    font-size: .9rem;
+    margin: 0;
+}
+
+/* ======= Habilidades ========================================= */
+.skills-subtitle {
+    color: var(--rosa);
+    text-transform: uppercase;
+    font-size: .85rem;
+    letter-spacing: 2px;
+    margin-bottom: 16px;
+}
+
+.skill-bar {
+    margin-bottom: 18px;
+}
+
+.skill-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: .9rem;
+    margin-bottom: 6px;
+    color: #ddd;
+}
+
+.progress {
+    height: 8px;
+    background-color: #2c2c2c;
+    border-radius: 10px;
+}
+
+.progress-bar {
+    width: 0%;
+    background-color: var(--rosa);
+    border-radius: 10px;
+    transition: width 1.2s ease;
+}
+
+.tag-pill {
+    background-color: #262626;
+    color: var(--rosa);
+    border: 1px solid var(--rosa-oscuro);
+    padding: 7px 16px;
+    border-radius: 30px;
+    font-size: .85rem;
+}
+
+
+
+/* ========================================= Footer ========================================= */
+.footer {
+    background-color: var(--negro);
+    color: #aaa;
+    padding: 24px 0;
+    font-size: .9rem;
+}
+
+.back-top {
+    color: var(--rosa);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.back-top:hover {
+    color: var(--blanco);
+}
+
+/* ========================================= FOOTER========================================= */
+.footer {
+    background-color: var(--negro);
+    color: #aaa;
+    padding: 24px 0;
+    font-size: .9rem;
+}
+
+.back-top {
+    color: var(--rosa);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.back-top:hover {
+    color: var(--blanco);
+}
 
 }
