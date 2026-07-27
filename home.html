@@ -100,7 +100,7 @@
                     </p>
                     <div class="row text-center mt-4">
                         <div class="col-4">
-                            <h3 class="stat-number">9.3</h3>
+                            <h3 class="stat-number">9</h3>
                             <p class="stat-label">Promedio</p>
                         </div>
                         <div class="col-4">
@@ -123,3 +123,93 @@
             </div>
         </div>
     </section>
+
+    <!-- ===== PROYECTOS ===== -->
+    <section id="proyectos" class="section-dark fade-section">
+        <div class="container">
+            <p class="section-number light"></p>
+            <h2 class="section-title light">Proyectos</h2>
+
+            <div class="row g-4 mt-3">
+                <div class="col-md-4">
+                    <div class="project-card">
+                        <img class="img-construccion" src="/pictures/en-construccion.png" alt="Proyecto 1">
+                        <div class="project-body">
+                            <h5>App de tareas</h5>
+                            <p>Aplicación para organizar pendientes hecha con HTML, CSS y JavaScript.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="project-card">
+                        <img class="img-construccion" src="/pictures/en-construccion.png" alt="Proyecto 2">
+                        <div class="project-body">
+                            <h5>Landing page</h5>
+                            <p>Página de presentación para un pequeño negocio local usando Bootstrap.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="project-card">
+                        <img class="img-construccion" src="/pictures/en-construccion.png" alt="Proyecto 3">
+                        <div class="project-body">
+                            <h5>Base de datos escolar</h5>
+                            <p>Proyecto final de base de datos para la administración de una escuela.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    in <!-- ===== CONTACTAME ===== -->
+    <section id="contactame" class="section-light fade-section">
+        <div class="container">
+            <p class="section-number">1</p>
+            <h2 class="section-title">datos de contacto</h2>
+
+            <div class="row mt-4 gy-4">
+                <div class="col-lg-5">
+                    <p class="section-text">Escríbeme, con gusto respondo. </p>
+                    <ul class="info-list">
+                        <li><i class="fa-solid fa-envelope pink-icon"></i> Cassandra R.</li>
+                        <li><i class="fa-solid fa-phone pink-icon"></i> +52 8113 7787 03</li>
+                        <li><i class="fa-solid fa-location-dot pink-icon"></i> México</li>
+                    </ul>
+                </div>
+                <div class="col-lg-7">
+                    <form id="contactForm" novalidate>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" id="nombre" placeholder="Tu nombre" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="email" class="form-control" id="email" placeholder="Tu correo" required>
+                            </div>
+                            <div class="col-12">
+                                <textarea class="form-control" id="mensaje" rows="4" placeholder="Tu mensaje"
+                                    required></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-pink px-4 py-2">Enviar mensaje</button>
+                                <span id="formMsg" class="ms-3"></span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container d-flex flex-wrap justify-content-between align-items-center">
+            <p class="mb-0">© 2026 Cassandra R. <i class="fa-solid fa-heart pink-icon"></i></p>
+            <a href="#inicio" class="back-top">Volver arriba ↑</a>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
