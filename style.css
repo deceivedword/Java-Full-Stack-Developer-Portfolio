@@ -37,6 +37,59 @@ body {
         width: 20px;
     }
 
+
+
+    /******===================== Navbar =================*/
+
+
+    #mainNav {
+        background-color: rgba(20, 20, 20, 0.92);
+        backdrop-filter: blur(6px);
+        padding: 16px 0;
+        transition: padding .3s ease;
+    }
+
+    .navbar-brand {
+        font-family: "Poppins", sans-serif;
+        font-weight: 800;
+        font-size: 1.4rem;
+        color: var(--blanco) !important;
+    }
+
+    .nav-link {
+        color: #ddd !important;
+        font-weight: 500;
+        margin: 0 6px;
+        transition: color .2s ease;
+    }
+
+    .nav-link:hover {
+        color: var(--rosa) !important;
+    }
+
+    .btn-pink {
+        background-color: var(--rosa);
+        color: var(--negro) !important;
+        border: none;
+        border-radius: 30px;
+        font-weight: 600;
+        transition: transform .2s ease, background-color .2s ease;
+    }
+
+    .btn-pink:hover {
+        background-color: var(--rosa-oscuro);
+        transform: translateY(-2px);
+        color: var(--negro);
+    }
+
+    .btn-outline-light {
+        border-radius: 30px;
+        font-weight: 500;
+    }
+
+
+
+
     /******===================== sobre mi =================*/
     #sobre-mi {
         background-color: #2c6c70;
@@ -86,6 +139,44 @@ body {
         color: #bdbdbd;
         font-size: .9rem;
         margin: 0;
+    }
+
+    /* =========================================
+   FOOTER
+========================================= */
+    .footer {
+        background-color: var(--negro);
+        color: #aaa;
+        padding: 24px 0;
+        font-size: .9rem;
+    }
+
+    .back-top {
+        color: var(--rosa);
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    .back-top:hover {
+        color: var(--blanco);
+    }
+
+    /* ========================================= FOOTER========================================= */
+    .footer {
+        background-color: var(--negro);
+        color: #aaa;
+        padding: 24px 0;
+        font-size: .9rem;
+    }
+
+    .back-top {
+        color: var(--rosa);
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    .back-top:hover {
+        color: var(--blanco);
     }
 
 }
