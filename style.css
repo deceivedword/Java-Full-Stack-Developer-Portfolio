@@ -28,6 +28,44 @@ body {
     padding-top: 130px;
 }
 
+.hero-banner-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0 40px;
+}
+
+.hero-banner-img {
+    width: 100%;
+    max-width: 900px;
+    border-radius: 14px;
+    display: block;
+    margin: 0 auto;
+}
+
+#heroCarousel .carousel-control-prev,
+#heroCarousel .carousel-control-next {
+    width: 6%;
+    opacity: .8;
+}
+
+#heroCarousel .carousel-control-prev-icon,
+#heroCarousel .carousel-control-next-icon {
+    background-color: var(--rosa-oscuro);
+    border-radius: 50%;
+    padding: 18px;
+}
+
+#heroCarousel .carousel-indicators {
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+#heroCarousel .carousel-indicators [data-bs-target] {
+    background-color: var(--rosa);
+}
+
 .hero-photo-frame {
     width: 280px;
     height: 280px;
