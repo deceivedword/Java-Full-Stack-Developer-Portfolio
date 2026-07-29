@@ -11,12 +11,21 @@
     box-sizing: border-box;
 }
 
+html {
+    background-color: var(--negro);
+}
+
 body {
     font-family: "Work Sans", sans-serif;
     color: #ffffff;
-    background: linear-gradient(135deg, #1a1a1a, #2c2c2c);
+    background: url('pictures/02-34-11-741_512.gif') center center / cover no-repeat fixed;
+    background-color: var(--negro);
     margin: 0;
     min-height: 100vh;
+}
+
+.hero-section {
+    padding-top: 130px;
 }
 
 .hero-photo-frame {
@@ -24,6 +33,11 @@ body {
     height: 280px;
     overflow: hidden;
     border-radius: 50%;
+    position: relative;
+    z-index: 1;
+    transform: translateZ(0);
+    will-change: transform;
+    backface-visibility: hidden;
 }
 
 .hero-photo {
@@ -93,6 +107,11 @@ body {
 /******===================== sobre mi =================*/
 #sobre-mi {
     background-color: #f8def6d2;
+}
+
+/******===================== habilidades =================*/
+#habilidades {
+    background-color: rgba(20, 20, 20, 0.92);
 }
 
 section {
@@ -202,24 +221,4 @@ section {
 
 .back-top:hover {
     color: var(--blanco);
-}
-
-/* ========================================= FOOTER========================================= */
-.footer {
-    background-color: var(--negro);
-    color: #aaa;
-    padding: 24px 0;
-    font-size: .9rem;
-}
-
-.back-top {
-    color: var(--rosa);
-    text-decoration: none;
-    font-weight: 600;
-}
-
-.back-top:hover {
-    color: var(--blanco);
-}
-
 }
