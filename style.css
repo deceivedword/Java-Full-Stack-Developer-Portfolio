@@ -186,6 +186,7 @@ section {
 .project-card img {
     width: 40%;
     display: block;
+    margin: 16px auto 0;
 }
 
 .project-body {
