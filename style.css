@@ -190,8 +190,7 @@ section {
 }
 
 .project-body {
-    padding:
-        0px;
+    padding: 16px;
 }
 
 .project-body h5 {
@@ -202,7 +201,8 @@ section {
 .project-body p {
     color: #bdbdbd;
     font-size: .9rem;
-    margin: 0;
+    margin: 0 0 8px;
+    text-align: justify;
 }
 
 /* ======= Habilidades ========================================= */
