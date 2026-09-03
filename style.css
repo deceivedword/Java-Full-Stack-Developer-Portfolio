@@ -258,6 +258,12 @@ section {
     color: var(--rosa);
 }
 
+/******===================== cotización =================*/
+.section-light {
+    background-color: white;
+    color: black;
+}
+
 /* ========================================= Footer ========================================= */
 .footer {
     background-color: var(--negro);
