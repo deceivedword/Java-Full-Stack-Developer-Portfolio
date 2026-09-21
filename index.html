@@ -16,24 +16,6 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Work+Sans:wght@400;500;600&display=swap"
         rel="stylesheet">
 
-    <!-- Iconos de habilidades -->
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=html,grid_view,javascript,terminal" />
-    <style>
-        .material-symbols-outlined {
-            font-family: 'Material Symbols Outlined';
-            font-weight: normal;
-            font-style: normal;
-            font-feature-settings: 'liga';
-            white-space: nowrap;
-            font-variation-settings:
-                'FILL' 0,
-                'wght' 400,
-                'GRAD' 0,
-                'opsz' 24
-        }
-    </style>
-
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -42,23 +24,25 @@
     <!-- ===== NAVBAR ===== -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
         <div class="container">
-            <a class="navbar-brand" href="#inicio">Cassandra<span class="pink-dot">.</span></a>
+            <a class="navbar-brand" href="index.html">Cassandra<span class="pink-dot">.</span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navMenu">
                 <ul class="navbar-nav align-items-lg-center">
-                    <li class="nav-item"><a class="nav-link" data-i18n="nav.inicio" href="#inicio">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" data-i18n="nav.sobreMi" href="#sobre-mi">Sobre mí</a>
+                    <li class="nav-item"><a class="nav-link active" data-i18n="nav.inicio"
+                            href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" data-i18n="nav.sobreMi" href="sobre-mi.html">Sobre mí</a>
                     </li>
                     <li class="nav-item"><a class="nav-link" data-i18n="nav.habilidades"
-                            href="#habilidades">Habilidades</a></li>
+                            href="sobre-mi.html#habilidades">Habilidades</a></li>
                     <li class="nav-item"><a class="nav-link" data-i18n="nav.experiencia"
                             href="building.html">Experiencia</a></li>
-                    <li class="nav-item"><a class="nav-link" data-i18n="nav.proyectos" href="#proyectos">Proyectos</a>
+                    <li class="nav-item"><a class="nav-link" data-i18n="nav.proyectos"
+                            href="sobre-mi.html#proyectos">Proyectos</a>
                     </li>
                     <li class="nav-item"><a class="nav-link btn btn-pink btn-sm ms-lg-2 px-3" data-i18n="nav.contacto"
-                            href="#contacto">Contacto</a></li>
+                            href="sobre-mi.html#contactame">Contacto</a></li>
                     <li class="nav-item">
                         <a id="langToggle" href="building.html" role="button"
                             class="btn btn-outline-light btn-sm ms-lg-2"
@@ -68,282 +52,120 @@
             </div>
         </div>
     </nav>
-    <!-- dividi por secciones para saber donde editar o cambiar -->
 
-
-    <!-- ===== Home ===== -->
+    <!-- ===== INICIO ===== -->
     <header id="inicio" class="hero-section">
-        <div class="container">
-            <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                </div>
-
-                <div class="carousel-inner">
-
-                    <!-- slide 1: imagen animada -->
-                    <div class="carousel-item active" data-bs-interval="4000">
-                        <div class="hero-banner-slide">
-                            <img src="pictures/animada.png" alt="Cassandra Ruiz - Desarrolladora Java Full Stack Jr."
-                                class="hero-banner-img">
-                        </div>
-                    </div>
-
-                    <!-- slide 2: presentación -->
-                    <div class="carousel-item">
-                        <div class="row align-items-center gy-5">
-
-                            <!-- foto -->
-                            <div class="col-lg-5 text-center">
-                                <div class="hero-photo-frame mx-auto">
-                                    <img src="pictures/perfil.png" alt="Foto de perfil" class="hero-photo">
-                                </div>
-                            </div>
-
-                            <!-- presentación -->
-                            <div class="col-lg-7">
-                                <span class="eyebrow">Full Stack, egresada de Generation</span>
-                                <h1 class="hero-title">Hola, soy<br>Cassandra R.</h1>
-                                <p class="hero-text">
-                                    Apasionada por el desarrollo web y el diseño.
-                                    Aprendiendo cada día algo nuevo y buscando mi primera oportunidad
-                                    para crecer profesionalmente.
-                                </p>
-                                <div class="d-flex flex-wrap gap-3 mb-4">
-                                    <a href="#contacto" class="btn btn-pink px-4 py-2">Contáctame</a>
-                                    <a href="pictures/CV.pdf" download="CV.pdf"
-                                        class="btn btn-outline-light px-4 py-2">Descargar CV <i
-                                            class="fa-solid fa-download ms-1"></i></a>
-                                </div>
-                                <div class="social-icons">
-                                    <a href="https://www.linkedin.com/in/cassandra-fullstack/" target="_blank"
-                                        rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
-                                    <a href="https://github.com/deceivedword" target="_blank"
-                                        rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
-                                    <a href="https://www.instagram.com/itsaboutcassie/" target="_blank"
-                                        rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
-                                    <a href="#"><i class="fa-solid fa-envelope"></i></a>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-
-                <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Anterior</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Siguiente</span>
-                </button>
+        <div class="container text-center">
+            <span class="eyebrow">Desarrolladora Fullstack</span>
+            <h1 class="services-title">Servicios de desarrollo web<br>a tu medida</h1>
+            <p class="services-lead">
+                Diseño y programo sitios y aplicaciones, del frente a la lógica,
+                para que tu idea funcione bien en cualquier dispositivo.
+            </p>
+            <div class="d-flex flex-wrap justify-content-center gap-3">
+                <a href="sobre-mi.html#contactame" class="btn btn-pink px-4 py-2">Solicitar cotización</a>
+                <a href="sobre-mi.html#proyectos" class="btn btn-outline-light px-4 py-2">Ver proyectos</a>
             </div>
-        </div>
-
-        <!-- ===== texto eliminado disponible para subir ===== -->
-        <div class="scroll-tag">
-            <span class="mb-0"> </span>
         </div>
     </header>
 
-    <!-- ===== SOBRE MI ===== -->
-    <section id="sobre-mi" class="section-light fade-section">
+    <!-- ===== SERVICIOS ===== -->
+    <section id="servicios" class="services-section">
         <div class="container">
-            <p class="section-number"></p>
-            <h2 class="section-title">Sobre mí</h2>
-            <div class="row gy-4 mt-3">
-                <div class="col-md-7">
-                    <p class="section-text">
-                        Soy Full Stack, egresada de Generation, contando con practica en Java, JavaScript, HTML, CSS y
-                        Python.
-                        Actualmente estoy creando un sitio web. Busco mi primer oportunidad profesional para seguir
-                        creciendo,
-                        aportar valor real a un equipo y seguir evolucionando como desarrolladora. ¡Estoy motivada y
-                        lista para sumarme!
-                    </p>
-                    <div class="row text-center mt-4">
-                        <div class="col-4">
-                            <h3 class="stat-number">9</h3>
-                            <p class="stat-label">Promedio</p>
-                        </div>
-                        <div class="col-4">
-                            <h3 class="stat-number">4+</h3>
-                            <p class="stat-label">Proyectos</p>
-                        </div>
-                        <div class="col-4">
-                            <h3 class="stat-number">2</h3>
-                            <p class="stat-label">Idiomas</p>
+            <h2 class="services-heading">Servicios</h2>
+
+            <div class="row g-4 mt-2">
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <i class="fa-solid fa-laptop-code service-icon"></i>
+                        <h5>Sitios web y landing pages</h5>
+                        <p>Páginas para tu negocio, marca o proyecto personal, con una imagen cuidada y fáciles de
+                            navegar.</p>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="tag-pill">HTML</span>
+                            <span class="tag-pill">CSS</span>
+                            <span class="tag-pill">Bootstrap</span>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-5">
-                    <ul class="info-list">
-                        <li class="about-name">Cassandra Ruiz Monterrey, N.L.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- ===== PROYECTOS ===== -->
-    <section id="proyectos" class="section-dark fade-section">
-        <div class="container">
-            <p class="section-number light"></p>
-            <h2 class="section-title light">Proyectos</h2>
-
-            <div class="row g-4 mt-3">
-                <div class="col-md-4">
-                    <div class="project-card">
-                        <img src="pictures/quizz.jpg" alt="Proyecto Quizz">
-                        <div class="project-body">
-                            <h5>Quizz</h5>
-                            <p>Aplicación para organizar pendientes hecha con HTML, CSS y JavaScript.</p>
-                            <a href="https://github.com/deceivedword/quizz" target="_blank"
-                                rel="noopener noreferrer">Ver en GitHub</a>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <i class="fa-solid fa-mobile-screen-button service-icon"></i>
+                        <h5>Diseño responsivo</h5>
+                        <p>Interfaces que se ven y funcionan igual de bien en celular, tableta y computadora.</p>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="tag-pill">Responsive</span>
+                            <span class="tag-pill">Bootstrap</span>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="project-card">
-                        <img src="pictures/calculadora.png" alt="Proyecto Calculadora">
-                        <div class="project-body">
-                            <h5>Calculadora</h5>
-                            <p>Calculadora hecha con HTML, CSS y JavaScript.</p>
-                            <a href="https://github.com/deceivedword/Calculadora" target="_blank"
-                                rel="noopener noreferrer">Ver en GitHub</a>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <i class="fa-solid fa-code service-icon"></i>
+                        <h5>Aplicaciones interactivas</h5>
+                        <p>Formularios, calculadoras, cotizadores y herramientas web que responden a lo que hace el
+                            usuario.</p>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="tag-pill">JavaScript</span>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="project-card">
-                        <img src="pictures/temperatura.png" alt="Proyecto Temperatura">
-                        <div class="project-body">
-                            <h5>Temperatura</h5>
-                            <p>Conversor de temperaturas hecho con HTML, CSS y JavaScript.</p>
-                            <a href="https://github.com/deceivedword/logica-programacion-2asi" target="_blank"
-                                rel="noopener noreferrer">Ver en GitHub</a>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <i class="fa-solid fa-server service-icon"></i>
+                        <h5>Desarrollo backend</h5>
+                        <p>Lógica del lado del servidor y programas en Java para dar soporte a tus aplicaciones.</p>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="tag-pill">Java</span>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- ===== Habilidades ===== -->
-    <section id="habilidades" class="section-dark fade-section">
-        <div class="container">
-            <p class="section-number light"></p>
-            <h2 class="section-title light">Habilidades</h2>
-
-            <div class="row mt-4 gy-4">
-                <div class="col-lg-6">
-                    <h5 class="skills-subtitle">Técnicas</h5>
-                    <div class="skill-bar">
-                        <span class="material-symbols-outlined skill-icon">html</span>
-                        <span>HTML &amp; CSS</span>
-                    </div>
-                    <div class="skill-bar">
-                        <span class="material-symbols-outlined skill-icon">grid_view</span>
-                        <span>Bootstrap</span>
-                    </div>
-                    <div class="skill-bar">
-                        <span class="material-symbols-outlined skill-icon">javascript</span>
-                        <span>JavaScript</span>
-                    </div>
-                    <div class="skill-bar">
-                        <span class="material-symbols-outlined skill-icon">terminal</span>
-                        <span>Python</span>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <i class="fa-solid fa-gears service-icon"></i>
+                        <h5>Automatización</h5>
+                        <p>Scripts que hacen por ti las tareas repetitivas y te ahorran tiempo.</p>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="tag-pill">Python</span>
+                        </div>
                     </div>
                 </div>
 
-                <div class="col-lg-6">
-                    <h5 class="skills-subtitle">Blandas</h5>
-                    <div class="d-flex flex-wrap gap-2">
-                        <span class="tag-pill">Trabajo en equipo</span>
-                        <span class="tag-pill">Comunicación</span>
-                        <span class="tag-pill">Organización</span>
-                        <span class="tag-pill">Creatividad</span>
-                        <span class="tag-pill">Resolución de problemas</span>
-                        <span class="tag-pill">Puntualidad</span>
-                    </div>
-
-                    <h5 class="skills-subtitle mt-4">Idiomas</h5>
-                    <div class="d-flex flex-wrap gap-2">
-                        <span class="tag-pill">Español — Nativo</span>
-                        <span class="tag-pill">Inglés — B2</span>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <i class="fa-solid fa-screwdriver-wrench service-icon"></i>
+                        <h5>Mejoras y mantenimiento</h5>
+                        <p>Corrijo, actualizo y mejoro sitios que ya tienes para que se vean y funcionen mejor.</p>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="tag-pill">HTML</span>
+                            <span class="tag-pill">CSS</span>
+                            <span class="tag-pill">JavaScript</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ===== CONTACTAME ===== -->
-    <section id="contactame" class="section-light fade-section">
+    <!-- ===== LLAMADA A LA ACCIÓN ===== -->
+    <section id="trabajemos" class="services-section">
         <div class="container">
-            <p class="section-number"></p>
-            <h2 class="section-title contact-title-pink">Déjame tu mensaje</h2>
-
-            <div class="row mt-4 gy-4">
-                <div class="col-lg-5">
-                    <div class="hero-photo-frame mx-auto mb-4">
-                        <img src="pictures/contactame.png" alt="Contáctame" class="hero-photo">
-                    </div>
-                    <p class="section-text">Escríbeme, con gusto respondo. </p>
-                    <ul class="info-list">
-                        <li><i class="fa-solid fa-envelope pink-icon"></i> elizabeth.g.ruiz7@outlook.com</li>
-                        <li><i class="fa-solid fa-phone pink-icon"></i> +52 8113 7787 03</li>
-                        <li><i class="fa-solid fa-location-dot pink-icon"></i> México</li>
-                    </ul>
-                </div>
-                <div class="col-lg-7">
-                    <form id="contactForm" action="https://formsubmit.co/abg.elizabeth@outlook.com" method="POST"
-                        novalidate>
-                        <input type="hidden" name="_subject" value="Nuevo mensaje desde el portafolio">
-                        <input type="hidden" name="_template" value="table">
-                        <input type="hidden" name="_captcha" value="false">
-                        <input type="text" name="_honey" style="display:none">
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                <input type="text" class="form-control" id="nombre" name="nombre"
-                                    placeholder="Tu nombre" required>
-                            </div>
-                            <div class="col-md-6">
-                                <input type="email" class="form-control" id="email" name="email" placeholder="Tu correo"
-                                    required>
-                            </div>
-                            <div class="col-12">
-                                <textarea class="form-control" id="mensaje" name="mensaje" rows="4"
-                                    placeholder="Tu mensaje" required></textarea>
-                            </div>
-                            <div class="col-12">
-                                <button type="submit" class="btn btn-pink px-4 py-2">Enviar mensaje</button>
-                                <span id="formMsg" class="ms-3"></span>
-                            </div>
-                            <a href="https://wa.link/4cwuzs" target="_blank">
-                                <button>Contáctame por WhatsApp</button>
-                            </a>
-                        </div>
-                    </form>
+            <div class="services-cta text-center">
+                <h2 class="services-heading">¿Tienes un proyecto en mente?</h2>
+                <p class="services-lead mb-4">Cuéntame tu idea y te respondo con una propuesta.</p>
+                <div class="d-flex flex-wrap justify-content-center gap-3">
+                    <a href="sobre-mi.html#contactame" class="btn btn-pink px-4 py-2">Contáctame</a>
+                    <a href="https://wa.link/4cwuzs" target="_blank" rel="noopener noreferrer"
+                        class="btn btn-outline-light px-4 py-2"><i class="fa-brands fa-whatsapp me-1"></i>
+                        WhatsApp</a>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- ===== Cotización ===== -->
-    <section id="cotizacion" class="section-light fade-section">
-        <div class="container">
-            <h2>Cotización</h2>
-
-
-    </section>
-
-
-
 
     <!-- ===== FOOTER ===== -->
     <footer class="footer">
@@ -354,7 +176,6 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
-    <script src="forma.js"></script>
 </body>
 
 </html>
