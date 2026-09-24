@@ -80,6 +80,8 @@ const EN = {
     "Sitio web para una empresa de albercas en Monterrey: presenta sus servicios y recibe solicitudes de presupuesto por WhatsApp y formulario.":
         "Website for a pool company in Monterrey: it showcases its services and receives quote requests via WhatsApp and a contact form.",
     "Sitio en línea": "Live site",
+    "Sitios en línea": "Live sites",
+    "Prácticas en GitHub": "GitHub practice projects",
     "Cliente real": "Real client",
     "Ver en GitHub": "View on GitHub",
 
