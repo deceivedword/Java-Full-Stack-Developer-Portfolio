@@ -234,12 +234,15 @@ section {
 
 
 .project-card {
-    background-color: var(--negro-suave);
-    border-radius: 6px;
+    background-color: rgba(30, 30, 30, 0.8);
+    backdrop-filter: blur(4px);
+    border-radius: 12px;
     overflow: hidden;
     border: 1px solid #2c2c2c;
     transition: transform .25s ease, border-color .25s ease;
     height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 /*******======= proyectos ==============*/
@@ -248,17 +251,36 @@ section {
     border-color: var(--rosa);
 }
 
-.project-card img {
-    width: 40%;
-    display: block;
-    margin: 16px auto 0;
+/* Misma altura de imagen en todas las tarjetas */
+.project-thumb {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--negro);
+    border-bottom: 1px solid #2c2c2c;
+}
+
+.project-thumb img {
+    max-width: 60%;
+    max-height: 120px;
+    object-fit: contain;
+}
+
+.project-thumb-icon {
+    font-size: 3.5rem;
+    color: var(--rosa);
 }
 
 .project-body {
-    padding: 16px;
+    padding: 18px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .project-body h5 {
+    font-family: "Poppins", sans-serif;
     color: var(--rosa);
     margin-bottom: 8px;
 }
@@ -266,8 +288,12 @@ section {
 .project-body p {
     color: #bdbdbd;
     font-size: .9rem;
-    margin: 0 0 8px;
-    text-align: justify;
+    margin: 0 0 12px;
+}
+
+.project-body .tag-pill {
+    padding: 4px 12px;
+    font-size: .78rem;
 }
 
 /* ======= Habilidades ========================================= */

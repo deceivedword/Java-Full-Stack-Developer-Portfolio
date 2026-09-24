@@ -77,9 +77,10 @@ const EN = {
     "Proyecto Calculadora": "Calculator project",
     "Calculadora": "Calculator",
     "Calculadora hecha con HTML, CSS y JavaScript.": "Calculator built with HTML, CSS and JavaScript.",
-    "Proyecto Temperatura": "Temperature project",
-    "Temperatura": "Temperature",
-    "Conversor de temperaturas hecho con HTML, CSS y JavaScript.": "Temperature converter built with HTML, CSS and JavaScript.",
+    "Sitio web para una empresa de albercas en Monterrey: presenta sus servicios y recibe solicitudes de presupuesto por WhatsApp y formulario.":
+        "Website for a pool company in Monterrey: it showcases its services and receives quote requests via WhatsApp and a contact form.",
+    "Sitio en línea": "Live site",
+    "Cliente real": "Real client",
     "Ver en GitHub": "View on GitHub",
 
     // Habilidades
