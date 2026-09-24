@@ -284,52 +284,75 @@
     </section>
 
     <!-- ===== CONTACTAME ===== -->
-    <section id="contactame" class="section-light fade-section">
+    <section id="contactame" class="section-light fade-section py-5">
         <div class="container">
-            <p class="section-number"></p>
-            <h2 class="section-title contact-title-pink">Déjame tu mensaje</h2>
-
-            <div class="row mt-4 gy-4">
+            <div class="row gy-5 align-items-center">
                 <div class="col-lg-5">
-                    <div class="hero-photo-frame mx-auto mb-4">
-                        <img src="pictures/contactame.png" alt="Contáctame" class="hero-photo">
+                    <h2 class="contact-title-pink">Déjame tu mensaje</h2>
+                    <p class="contact-lead mb-4">Cuéntame tu idea y te respondo con una propuesta, sin compromiso.
+                        Elige la forma que te quede más cómoda.</p>
+
+                    <div class="contact-methods">
+                        <a class="contact-method" href="https://wa.link/4cwuzs" target="_blank"
+                            rel="noopener noreferrer">
+                            <span class="contact-method-icon"><i class="fa-brands fa-whatsapp"></i></span>
+                            <span><small>WhatsApp</small><strong>Escríbeme ahora</strong></span>
+                            <i class="fa-solid fa-arrow-right contact-method-arrow"></i>
+                        </a>
+                        <a class="contact-method" href="tel:+528113778703">
+                            <span class="contact-method-icon"><i class="fa-solid fa-phone"></i></span>
+                            <span><small>Llámame</small><strong>+52 8113 7787 03</strong></span>
+                            <i class="fa-solid fa-arrow-right contact-method-arrow"></i>
+                        </a>
+                        <a class="contact-method" href="mailto:elizabeth.g.ruiz7@outlook.com">
+                            <span class="contact-method-icon"><i class="fa-solid fa-envelope"></i></span>
+                            <span><small>Correo</small><strong>elizabeth.g.ruiz7@outlook.com</strong></span>
+                            <i class="fa-solid fa-arrow-right contact-method-arrow"></i>
+                        </a>
                     </div>
-                    <p class="section-text">Escríbeme, con gusto respondo. </p>
-                    <ul class="info-list">
-                        <li><i class="fa-solid fa-envelope pink-icon"></i> elizabeth.g.ruiz7@outlook.com</li>
-                        <li><i class="fa-solid fa-phone pink-icon"></i> +52 8113 7787 03</li>
-                        <li><i class="fa-solid fa-location-dot pink-icon"></i> México</li>
-                    </ul>
+                    <p class="mt-3 mb-0 text-secondary"><i class="fa-solid fa-location-dot me-1"></i> México</p>
                 </div>
+
                 <div class="col-lg-7">
-                    <form id="contactForm" action="https://formsubmit.co/abg.elizabeth@outlook.com" method="POST"
-                        novalidate>
-                        <input type="hidden" name="_subject" value="Nuevo mensaje desde el portafolio">
-                        <input type="hidden" name="_template" value="table">
-                        <input type="hidden" name="_captcha" value="false">
-                        <input type="text" name="_honey" style="display:none">
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                <input type="text" class="form-control" id="nombre" name="nombre"
-                                    placeholder="Tu nombre" required>
+                    <div class="contact-form-card">
+                        <h3>Solicita tu cotización</h3>
+                        <p class="text-secondary mb-4">Déjame tus datos y te contacto a la brevedad.</p>
+                        <form id="contactForm" action="https://formsubmit.co/abg.elizabeth@outlook.com" method="POST">
+                            <input type="hidden" name="_subject" value="Nuevo mensaje desde el portafolio">
+                            <input type="hidden" name="_template" value="table">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="text" name="_honey" style="display:none">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="nombre" class="form-label">Nombre</label>
+                                    <input type="text" class="form-control" id="nombre" name="nombre"
+                                        placeholder="Tu nombre" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="telefono" class="form-label">Teléfono</label>
+                                    <input type="tel" class="form-control" id="telefono" name="telefono"
+                                        placeholder="Tu teléfono">
+                                </div>
+                                <div class="col-12">
+                                    <label for="email" class="form-label">Correo</label>
+                                    <input type="email" class="form-control" id="email" name="email"
+                                        placeholder="tucorreo@ejemplo.com" required>
+                                </div>
+                                <div class="col-12">
+                                    <label for="mensaje" class="form-label">Mensaje</label>
+                                    <textarea class="form-control" id="mensaje" name="mensaje" rows="4"
+                                        placeholder="Cuéntame sobre tu proyecto" required></textarea>
+                                </div>
+                                <div class="col-12 d-flex flex-wrap gap-3">
+                                    <button type="submit" class="btn btn-pink px-4 py-2">
+                                        <i class="fa-solid fa-paper-plane me-1"></i> Enviar mensaje</button>
+                                    <a href="https://wa.link/4cwuzs" target="_blank" rel="noopener noreferrer"
+                                        class="btn btn-outline-light px-4 py-2"><i
+                                            class="fa-brands fa-whatsapp me-1"></i> Prefiero WhatsApp</a>
+                                </div>
                             </div>
-                            <div class="col-md-6">
-                                <input type="email" class="form-control" id="email" name="email" placeholder="Tu correo"
-                                    required>
-                            </div>
-                            <div class="col-12">
-                                <textarea class="form-control" id="mensaje" name="mensaje" rows="4"
-                                    placeholder="Tu mensaje" required></textarea>
-                            </div>
-                            <div class="col-12">
-                                <button type="submit" class="btn btn-pink px-4 py-2">Enviar mensaje</button>
-                                <span id="formMsg" class="ms-3"></span>
-                            </div>
-                            <a href="https://wa.link/4cwuzs" target="_blank">
-                                <button>Contáctame por WhatsApp</button>
-                            </a>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -353,6 +376,10 @@
             <a href="#inicio" class="back-top">Volver arriba ↑</a>
         </div>
     </footer>
+
+    <!-- Botón flotante de WhatsApp -->
+    <a href="https://wa.link/4cwuzs" class="whatsapp-float" target="_blank" rel="noopener noreferrer"
+        aria-label="Escríbeme por WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
     <script src="forma.js"></script>

@@ -5,6 +5,7 @@
     --rosa: #f7cfe1;
     --rosa-oscuro: #e0a9c277;
     --gris-texto: #6b6b6b;
+    --rosa-barbie: #e0218a;
 }
 
 * {
@@ -256,7 +257,130 @@ section {
 
 /******===================== contactame =================*/
 .contact-title-pink {
+    color: var(--rosa-barbie);
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+}
+
+.contact-lead {
+    color: #555;
+    font-size: 1.05rem;
+    max-width: 560px;
+}
+
+.contact-methods {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.contact-method {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 20px;
+    background-color: rgba(20, 20, 20, 0.8);
+    border: 1px solid #2c2c2c;
+    border-radius: 14px;
+    color: var(--blanco);
+    text-decoration: none;
+    transition: transform .2s ease, border-color .2s ease;
+}
+
+.contact-method:hover {
+    transform: translateY(-3px);
+    border-color: var(--rosa-barbie);
+    color: var(--blanco);
+}
+
+.contact-method-icon {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background-color: rgba(224, 33, 138, 0.8);
+    color: var(--blanco);
+    font-size: 1.3rem;
+}
+
+.contact-method small {
+    display: block;
+    color: #aaa;
+    font-size: .8rem;
+}
+
+.contact-method strong {
+    display: block;
+    font-weight: 600;
+    word-break: break-word;
+}
+
+.contact-method-arrow {
+    margin-left: auto;
     color: var(--rosa);
+}
+
+.contact-form-card {
+    background-color: var(--negro);
+    border-radius: 20px;
+    padding: 32px 28px;
+    color: var(--blanco);
+}
+
+.contact-form-card h3 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: var(--rosa);
+    margin-bottom: 4px;
+}
+
+.contact-form-card .form-label {
+    color: #ddd;
+    font-size: .9rem;
+    margin-bottom: 6px;
+}
+
+.contact-form-card .form-control {
+    background-color: var(--negro-suave);
+    border: 1px solid #333;
+    border-radius: 10px;
+    color: var(--blanco);
+    padding: 12px 14px;
+}
+
+.contact-form-card .form-control::placeholder {
+    color: #777;
+}
+
+.contact-form-card .form-control:focus {
+    border-color: var(--rosa-barbie);
+    box-shadow: 0 0 0 .2rem rgba(224, 33, 138, .25);
+}
+
+/* Botón flotante de WhatsApp */
+.whatsapp-float {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 1050;
+    width: 58px;
+    height: 58px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background-color: #25d366;
+    color: #fff;
+    font-size: 1.9rem;
+    text-decoration: none;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, .35);
+    transition: transform .2s ease;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.08);
+    color: #fff;
 }
 
 /******===================== cotización =================*/
@@ -302,7 +426,8 @@ section {
 }
 
 .service-card {
-    background-color: var(--negro-suave);
+    background-color: rgba(30, 30, 30, 0.8);
+    backdrop-filter: blur(4px);
     border: 1px solid #2c2c2c;
     border-radius: 12px;
     padding: 28px 24px;
@@ -334,7 +459,8 @@ section {
 }
 
 .services-cta {
-    background-color: rgba(20, 20, 20, 0.92);
+    background-color: rgba(20, 20, 20, 0.8);
+    backdrop-filter: blur(4px);
     border: 1px solid #2c2c2c;
     border-radius: 24px;
     padding: 40px 24px;
