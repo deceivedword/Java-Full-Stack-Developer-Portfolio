@@ -169,6 +169,55 @@ body {
     color: var(--negro);
 }
 
+/* Banner TryTo: se recorta el margen vacío de abajo de la imagen */
+.about-banner {
+    display: block;
+    width: 260px;
+    max-width: 100%;
+    aspect-ratio: 4 / 1;
+    object-fit: cover;
+    object-position: left top;
+    border-radius: 8px;
+    transition: transform .2s ease;
+}
+
+.about-banner:hover {
+    transform: translateY(-2px);
+}
+
+.about-social-text {
+    color: var(--negro);
+    font-weight: 500;
+    margin: 12px 0 8px;
+}
+
+.social-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 14px;
+    border-radius: 30px;
+    color: var(--blanco);
+    font-size: .88rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform .2s ease, opacity .2s ease;
+}
+
+.social-btn:hover {
+    color: var(--blanco);
+    transform: translateY(-2px);
+    opacity: .9;
+}
+
+.social-fb {
+    background-color: #1877f2;
+}
+
+.social-ig {
+    background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af);
+}
+
 /******===================== habilidades =================*/
 #habilidades {
     background-color: rgba(20, 20, 20, 0.92);
