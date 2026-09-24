@@ -357,3 +357,137 @@ section {
 .back-top:hover {
     color: var(--blanco);
 }
+
+/* ========================================= Inicio: cielo que cambia con el scroll ========================================= */
+/* Solo afecta a index.html (body.home); el resto de páginas conserva su fondo. */
+body.home {
+    background: transparent;
+}
+
+.sky {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    overflow: hidden;
+    pointer-events: none;
+    --night: 1;
+    --dawn: 1;
+    --clouds: 0;
+    --sun-y: 120vh;
+    --y-mountains: 105%;
+    --y-hills: 105%;
+    --y-meadow: 105%;
+    --y-foreground: 105%;
+    --cloud-x: 0px;
+}
+
+.sky-layer {
+    position: absolute;
+    inset: 0;
+}
+
+/* Día: base siempre opaca */
+.sky-day {
+    background: linear-gradient(180deg, #1560c0 0%, #2b8fe0 40%, #6fcaf0 75%, #bdeff8 100%);
+}
+
+/* Amanecer: se ve mientras las estrellas se apagan */
+.sky-dawn {
+    background: linear-gradient(180deg, #1b1740 0%, #5b3a7a 32%, #d9628a 62%, #ff9f5a 85%, #ffd27a 100%);
+    opacity: var(--dawn);
+}
+
+/* Noche: negro con estrellas (el GIF de siempre) */
+.sky-night {
+    background: var(--negro) url('pictures/02-34-11-741_512.gif') center center / cover no-repeat;
+    opacity: var(--night);
+}
+
+.sky-sun {
+    position: absolute;
+    top: 0;
+    left: 74%;
+    width: 110px;
+    height: 110px;
+    margin-left: -55px;
+    transform: translateY(var(--sun-y));
+    will-change: transform;
+}
+
+/* Resplandor detrás del sol (así los píxeles transparentes del borde no dejan un aro azul) */
+.sky-sun::before {
+    content: "";
+    position: absolute;
+    inset: -80%;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255, 214, 90, .75) 0%, rgba(255, 190, 70, .35) 26%, rgba(255, 180, 60, 0) 62%);
+}
+
+.sky-sun canvas {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    image-rendering: pixelated;
+}
+
+.sky-clouds {
+    position: absolute;
+    inset: 0;
+    opacity: var(--clouds);
+    transform: translateX(var(--cloud-x));
+}
+
+.cloud-px {
+    position: absolute;
+    height: auto;
+    image-rendering: pixelated;
+}
+
+/* Paisaje pixel-art: cada capa sube a su ritmo con el scroll */
+.sky-scene {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: max(42vh, min(45.8vw, 68vh));
+}
+
+.scene-layer {
+    position: absolute;
+    inset: 0;
+    will-change: transform;
+}
+
+.scene-layer canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center bottom;
+    image-rendering: pixelated;
+}
+
+.scene-mountains { transform: translateY(var(--y-mountains)); }
+.scene-hills { transform: translateY(var(--y-hills)); }
+.scene-meadow { transform: translateY(var(--y-meadow)); }
+.scene-foreground { transform: translateY(var(--y-foreground)); }
+
+/* Legibilidad del texto que queda directo sobre el cielo */
+body.home .hero-section,
+body.home .services-section > .container > .services-heading,
+body.home .services-section > .container > .services-lead {
+    text-shadow: 0 2px 14px rgba(0, 0, 0, .45);
+}
+
+body.home .services-cta {
+    text-shadow: none;
+}
+
+/* Footer transparente para que se vea el pasto detrás */
+body.home .footer {
+    background-color: transparent;
+    color: #fff;
+    text-shadow: 0 1px 8px rgba(0, 0, 0, .7);
+    padding-top: 60px;
+}

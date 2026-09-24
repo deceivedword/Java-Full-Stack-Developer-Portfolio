@@ -19,7 +19,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="home">
+
+    <!-- ===== FONDO: noche → día según el scroll ===== -->
+    <div class="sky" aria-hidden="true">
+        <div class="sky-layer sky-day"></div>
+        <div class="sky-sun"></div>
+        <div class="sky-clouds"></div>
+        <div class="sky-layer sky-dawn"></div>
+        <div class="sky-layer sky-night"></div>
+        <!-- Paisaje pixel-art: cielo.js dibuja cada capa en su canvas -->
+        <div class="sky-scene">
+            <div class="scene-layer scene-mountains"></div>
+            <div class="scene-layer scene-hills"></div>
+            <div class="scene-layer scene-meadow"></div>
+            <div class="scene-layer scene-foreground"></div>
+        </div>
+    </div>
 
     <!-- ===== NAVBAR ===== -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
@@ -167,6 +183,44 @@
         </div>
     </section>
 
+    <!-- ===== SITIOS CREADOS ===== -->
+    <section id="sitios" class="services-section">
+        <div class="container">
+            <h2 class="services-heading">Lo que imaginas, lo llevamos a la realidad</h2>
+            <p class="services-lead text-center">Estos son algunos sitios que ya están en línea.</p>
+
+            <div class="row g-4 mt-2 justify-content-center">
+                <div class="col-md-6 col-lg-5">
+                    <div class="service-card">
+                        <i class="fa-solid fa-paw service-icon"></i>
+                        <h5>Mi Veterinaria</h5>
+                        <p>Sitio web para una veterinaria: presenta sus servicios y facilita que los clientes la
+                            encuentren y contacten.</p>
+                        <div class="d-flex flex-wrap align-items-center gap-2">
+                            <a href="https://miveterinaria.space/" target="_blank" rel="noopener noreferrer"
+                                class="btn btn-pink btn-sm px-3">Ver sitio <i
+                                    class="fa-solid fa-arrow-up-right-from-square ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-5">
+                    <div class="service-card">
+                        <i class="fa-solid fa-boxes-stacked service-icon"></i>
+                        <h5>Mi Inventario</h5>
+                        <p>Aplicación web para llevar el control de productos y existencias de forma clara y
+                            ordenada.</p>
+                        <div class="d-flex flex-wrap align-items-center gap-2">
+                            <a href="https://mi-inventario.space/" target="_blank" rel="noopener noreferrer"
+                                class="btn btn-pink btn-sm px-3">Ver sitio <i
+                                    class="fa-solid fa-arrow-up-right-from-square ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- ===== FOOTER ===== -->
     <footer class="footer">
         <div class="container d-flex flex-wrap justify-content-between align-items-center">
@@ -176,6 +230,7 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+    <script src="cielo.js"></script>
 </body>
 
 </html>
